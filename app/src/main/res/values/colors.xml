@@ -5,6 +5,7 @@
     <color name="colorAccent">#315FE8</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+    <color name="textColorSecondary">#353535</color>
 
               <!--    Dashboard colors -->
     <color name="cardBlue">#E6E6FF</color>
