@@ -5,4 +5,15 @@
     <color name="colorAccent">#315FE8</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+
+              <!--    Dashboard colors -->
+    <color name="cardBlue">#E6E6FF</color>
+    <color name="cardPink">#FEE8E8</color>
+    <color name="cardPurple">#F0D8FF</color>
+    <color name="cardLightBlue">#E0FFEC</color>
+
+    <color name="cardIconBlue">#315FE8</color>
+    <color name="cardIconPink">#EB5757</color>
+    <color name="cardIconPurple">#BB6BD9</color>
+    <color name="cardIconLightBlue">#56CCF2</color>
 </resources>
