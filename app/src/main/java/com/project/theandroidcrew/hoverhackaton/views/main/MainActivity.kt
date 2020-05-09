@@ -1,7 +1,8 @@
-package com.project.theandroidcrew.hoverhackaton
+package com.project.theandroidcrew.hoverhackaton.views.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.project.theandroidcrew.hoverhackaton.R
 
 class MainActivity : AppCompatActivity() {
 
