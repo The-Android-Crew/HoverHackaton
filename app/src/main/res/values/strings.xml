@@ -7,4 +7,10 @@
     <string name="started">Let\'s get \nStarted!</string>
     <string name="sign_up">SIGN UP</string>
     <string name="verify_continue"><![CDATA[VERIFY & CONTINUE]]></string>
+    <string name="fund_transfer_text">Fund\nTransfer</string>
+    <string name="account_number">Account Number</string>
+    <string name="account_name">Account Name</string>
+    <string name="amount">Amount</string>
+    <string name="account_pin">Account Pin</string>
+    <string name="let_s_go">LET\'S GO!</string>
 </resources>
