@@ -14,6 +14,17 @@
         <item name="fontFamily">@font/lora_bold</item>
     </style>
 
+    <style name="TextAppearance.Large.Light" parent="TextAppearance.Large.Primary">
+        <item name="android:textSize">22sp</item>
+        <item name="fontFamily">@font/lora</item>
+    </style>
+
+    <style name="TextAppearance.Small.Light" parent="TextAppearance.Large.Light">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+
     <style name="TextAppearance.Large.Secondary" parent="TextAppearance.MaterialComponents.Headline6">
         <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/black</item>
