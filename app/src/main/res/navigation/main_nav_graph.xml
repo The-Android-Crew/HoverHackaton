@@ -6,10 +6,37 @@
     app:startDestination="@id/onBoarding">
 
     <fragment
+        android:id="@+id/numberFragment"
+        android:name="com.project.theandroidcrew.hoverhackaton.views.main.ui.NumberFragment"
+        android:label="Number Fragment"
+        tools:layout="@layout/fragment_number">
+        <action
+            android:id="@+id/action_firstFtagment_to_dashboardFragment"
+            app:destination="@id/otpFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.project.theandroidcrew.hoverhackaton.views.main.ui.OTPFragment"
+        android:label="OTP Fragment"
+        tools:layout="@layout/fragment_otp">
+        <action
+            android:id="@+id/action_firstFtagment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+
+    <fragment
         android:id="@+id/dashboardFragment"
         android:name="com.project.theandroidcrew.hoverhackaton.views.main.ui.DashboardFragment"
         android:label="DashboardFragment"
         tools:layout="@layout/fragment_dashboard"/>
+
+
     <fragment
         android:id="@+id/onBoarding"
         android:name="com.project.theandroidcrew.hoverhackaton.views.main.ui.OnBoarding"
@@ -17,6 +44,6 @@
         tools:layout="@layout/fragment_on_boarding" >
         <action
             android:id="@+id/action_onBoarding_to_dashboardFragment"
-            app:destination="@id/dashboardFragment" />
+            app:destination="@id/numberFragment" />
     </fragment>
 </navigation>

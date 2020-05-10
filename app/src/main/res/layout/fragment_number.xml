@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.main.ui.NumberFragment">
+
+
+    <ImageView
+        android:id="@+id/imageViewOTP"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/img_hand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEnterNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat"
+        android:text="Enter your Phone Number"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewOTP"
+        app:layout_constraintStart_toStartOf="@+id/imageViewOTP"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewOTP" />
+
+    <TextView
+        android:id="@+id/textViewMiniDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat"
+        android:text="We will send you a verification code "
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEnterNumber"
+        app:layout_constraintStart_toStartOf="@+id/textViewEnterNumber"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEnterNumber" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMiniDescription">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="+234"
+            android:textSize="15sp">
+
+        </androidx.appcompat.widget.AppCompatTextView>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:inputType="number"
+            android:outlineAmbientShadowColor="@color/black">
+
+        </androidx.appcompat.widget.AppCompatEditText>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="15dp"
+        android:padding="20dp"
+        android:text="Generate OTP"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayoutNumber"
+        app:layout_constraintStart_toStartOf="@+id/linearLayoutNumber"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutNumber" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
