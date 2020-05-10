@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/numberFragment">
+    app:startDestination="@id/onBoarding">
 
     <fragment
         android:id="@+id/numberFragment"
@@ -29,7 +29,6 @@
             android:id="@+id/action_firstFtagment_to_dashboardFragment"
             app:destination="@id/dashboardFragment" />
     </fragment>
-    app:startDestination="@id/onBoarding">
 
     <fragment
         android:id="@+id/dashboardFragment"
@@ -45,6 +44,6 @@
         tools:layout="@layout/fragment_on_boarding" >
         <action
             android:id="@+id/action_onBoarding_to_dashboardFragment"
-            app:destination="@id/dashboardFragment" />
+            app:destination="@id/numberFragment" />
     </fragment>
 </navigation>
