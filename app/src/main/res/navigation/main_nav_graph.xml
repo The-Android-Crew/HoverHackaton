@@ -36,6 +36,29 @@
         android:label="DashboardFragment"
         tools:layout="@layout/fragment_dashboard">
         <action
+            android:id="@+id/action_dashboardFragment_to_bankSelectFragment"
+            app:destination="@id/bankSelectFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankSelectFragment"
+        android:name="com.project.theandroidcrew.hoverhackaton.views.main.ui.BankSelectFragment"
+        android:label="fragment_bank_select"
+        tools:layout="@layout/fragment_bank_select" >
+        <argument
+            android:name="action"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_bankSelectFragment_to_accountBalanceFragment"
+            app:destination="@id/accountBalanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountBalanceFragment"
+        android:name="com.project.theandroidcrew.hoverhackaton.views.main.ui.AccountBalanceFragment"
+        android:label="fragment_account_balance"
+        tools:layout="@layout/fragment_account_balance" />
+        tools:layout="@layout/fragment_dashboard"/>
+        tools:layout="@layout/fragment_dashboard">
+        <action
             android:id="@+id/action_dashboardFragment_to_fundsTransferFragment"
             app:destination="@id/fundsTransferFragment" />
     </fragment>
