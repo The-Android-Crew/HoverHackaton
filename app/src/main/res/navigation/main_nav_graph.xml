@@ -11,7 +11,7 @@
         android:label="Number Fragment"
         tools:layout="@layout/fragment_number">
         <action
-            android:id="@+id/action_firstFtagment_to_dashboardFragment"
+            android:id="@+id/action_numberFragment_to_otpFragment"
             app:destination="@id/otpFragment"
             app:enterAnim="@anim/fragment_fade_enter"
             app:exitAnim="@anim/fragment_fade_exit"
@@ -26,7 +26,7 @@
         android:label="OTP Fragment"
         tools:layout="@layout/fragment_otp">
         <action
-            android:id="@+id/action_firstFtagment_to_dashboardFragment"
+            android:id="@+id/action_otpFragment_to_dashboardFragment"
             app:destination="@id/dashboardFragment" />
     </fragment>
 
@@ -39,6 +39,7 @@
             android:id="@+id/action_dashboardFragment_to_bankSelectFragment"
             app:destination="@id/bankSelectFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/bankSelectFragment"
         android:name="com.project.theandroidcrew.hoverhackaton.views.main.ui.BankSelectFragment"
@@ -51,14 +52,13 @@
             android:id="@+id/action_bankSelectFragment_to_accountBalanceFragment"
             app:destination="@id/accountBalanceFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/accountBalanceFragment"
         android:name="com.project.theandroidcrew.hoverhackaton.views.main.ui.AccountBalanceFragment"
         android:label="fragment_account_balance"
-        tools:layout="@layout/fragment_account_balance" />
-        tools:layout="@layout/fragment_dashboard"/>
-        tools:layout="@layout/fragment_dashboard">
-        <action
+        tools:layout="@layout/fragment_account_balance" >
+    <action
             android:id="@+id/action_dashboardFragment_to_fundsTransferFragment"
             app:destination="@id/fundsTransferFragment" />
     </fragment>
@@ -79,4 +79,5 @@
             android:id="@+id/action_onBoarding_to_dashboardFragment"
             app:destination="@id/numberFragment" />
     </fragment>
+
 </navigation>
