@@ -2,6 +2,7 @@ package com.project.theandroidcrew.hoverhackaton.views.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.project.theandroidcrew.hoverhackaton.R
 
 class MainActivity : AppCompatActivity() {
@@ -9,4 +10,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+
 }
